@@ -13,9 +13,9 @@ def predict_hair_loss(features):
     return prediction[0]
 
 def main():
-    # HTML for styling
+    # HTML for styling with black background
     html_temp = """
-    <div style="background-color:tomato;padding:10px">
+    <div style="background-color:black;padding:10px">
     <h2 style="color:white;text-align:center;">HAIR LOSS PREDICTOR</h2>
     </div>
     """
@@ -32,13 +32,13 @@ def main():
 
     # Additional input fields
     Stress = st.selectbox("Stress Level", options=["Low", "Moderate", "High"])
-    Medical_Conditions =  st.selectbox("Medical Conditions", options=['No Data', 'Eczema', 'Dermatosis', 'Ringworm', 'Psoriasis', 'Alopecia Areata ',
+    Medical_Conditions = st.selectbox("Medical Conditions", options=['No Data', 'Eczema', 'Dermatosis', 'Ringworm', 'Psoriasis', 'Alopecia Areata ',
                                                          'Scalp Infection', 'Seborrheic Dermatitis', 'Dermatitis', 'Thyroid Problems',
                                                          'Androgenetic Alopecia'])
     Medications_Treatments = st.selectbox("Medications & Treatments", options=['No Data', 'Antibiotics', 'Antifungal Cream', 'Accutane', 'Chemotherapy',
                                                                      'Steroids', 'Rogaine', 'Blood Pressure Medication', 'Immunomodulators',
                                                                      'Antidepressants ', 'Heart Medication '])
-    Nutritional_Deficiencies =  st.selectbox("Nutritional Deficiencies", options=['No Data','Magnesium deficiency', 'Protein deficiency', 'Biotin Deficiency ',
+    Nutritional_Deficiencies = st.selectbox("Nutritional Deficiencies", options=['No Data','Magnesium deficiency', 'Protein deficiency', 'Biotin Deficiency ',
                                                                      'Iron deficiency', 'Selenium deficiency', 'Omega-3 fatty acids','Zinc Deficiency', 
                                                                      'Vitamin A Deficiency', 'Vitamin D Deficiency', 'Vitamin E deficiency'])
 
@@ -79,4 +79,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
