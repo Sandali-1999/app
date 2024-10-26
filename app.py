@@ -78,4 +78,5 @@ def main():
         st.success(f"The predicted hair loss status is: {'Hair Loss' if result == 1 else 'No Hair Loss'}")
 
 if __name__ == '__main__':
-    main() give this for show in black background color
+    main()
+
